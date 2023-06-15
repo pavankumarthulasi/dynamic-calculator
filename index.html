@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator application</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="in"> 
+        <label>value :</label>
+    <input type="number"placeholder="enter the number "id="n1">
+    <br>
+        </div>
+        <div id="result">
+            <p id="res">output</p>
+            <p id="exp"  onclick="exp()">expression</p>
+        </div>
+        
+<div class="opp">
+    <input type="submit"value="add" id="add" onclick="add()" >
+    <input type="submit"value="sub" id="sub" onclick="sub()">
+    <input type="submit"value="mul" id="mul"onclick="mul()">
+    <input type="submit"value="div" id="div"onclick="div()">
+</div>
+<div  id="re">
+    <p id="e"onclick="equal()">
+    =
+    </p>
+    <p id="reload"onclick="window.location.reload()">
+     reload
+    </p>
+</div>
+    </div>
+    
+    <script src="design.js"></script>
+    
+</body>
+</html>
